@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="author" content="Mbuso Machawe Shongwe">
+		<meta name="description" content="Portfolio website for Machawe Shongwe a software developer and UX designer">
+		<meta name="keywords" content="Mbuso, Machawe, Shongwe, Eswatini, UNISWA, UNESWA, Software Developer, Swazi developer, Swazi Programmer, UX Designer, User Expirience Designer, Frontend, vuejs,stokvelmutual,Computer Scientist">
+<meta name="robots" content="all">
+
 		<title>Mbuso Machawe Shongwe</title>
 	
 		<link rel="icon" href="img/chawe-favicon.png" type="image" />
@@ -16,9 +21,12 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top scrolling-navbar">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">MACHAWE </a>
+			
+				<a class="navbar-brand my-0 py-0" href="#">
+					<img src="./img/logo.png" height="30" alt="mdb logo">
+  				</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -32,17 +40,17 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link mx-2 active" href="#hero">Home</a>
-						<a class="nav-link mx-2" href="#about">About</a>
-						<a class="nav-link mx-2" href="#services">Services</a>
-						<a class="nav-link mx-2" href="#projects">Projects</a>
-						<a class="nav-link mx-2" href="#contact">Contact us</a>
+						<a class="nav-link mx-2 hero active" id="home-nav-link" href="#hero">Home</a>
+						<a class="nav-link mx-2 about" id="about-nav-link" href="#about">About</a>
+						<a class="nav-link mx-2 services" id="services-nav-link" href="#services">Services</a>
+						<a class="nav-link mx-2 projects" id="projects-nav-link" href="#projects">Projects</a>
+						<a class="nav-link mx-2 contact" id="contact-nav-link" href="#contact">Contact me</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<div class="container-fluid" data-mdb-spy="scroll">
+		<div class="container-fluid pt-5" data-mdb-spy="scroll">
 			<!-- Hero Section-->
 			<section class="container-md" id="hero">
 				<div class="custom-shape-divider-bottom-1641292139">
@@ -52,16 +60,16 @@
 				</div>
 				<div class="row justify-content-center align-items-center hero" style="height: 75vh">
 					<div class="col-9 col-md-6 hover-zoom puff-in-top ripple spray-carsor" data-mdb-ripple-unbound="true" data-mdb-ripple-color="light" data-mdb-ripple-duration="1s">
-						<img src="./img/main.jpg" class="img-thumbnail rounded-circle main-img" alt="Machawe Shongwe" title="Machawe Shongwe" />
+						<img  src="./img/main.jpg" class="img-thumbnail rounded-circle main-img" alt="Machawe Shongwe" title="Machawe Shongwe" />
 					</div>
 					<div class="col-12 col-md-6 text-center hero-content">
-						<h1 class="">Hi, I'm <span class="hero-name focus-in-expand-fwd">Machawe Shongwe</span></h1>
+						<h1 class="">Hi, I'm <span class="hero-name focus-in-expand-fwd" >Machawe Shongwe</span></h1>
 						<h4 class="">Frontend Developer and UX Designer</h4>
 						<div class="d-flex justify-content-center mt-4">
-							<button type="button" class="btn btn-primary btn-lg mx-3 btn-rounded hero-contact">Contact</button>
-							<button type="button" class="btn btn-outline-primary btn-lg mx-3 btn-rounded hero-download" href="img/database.jpg">
+							<a  class="btn btn-primary btn-md mx-3 btn-rounded hero-contact">Contact</a>
+							<a  class="btn btn-outline-primary btn-md mx-3 btn-rounded hero-download" href="assets/Mbuso-Shongwe-CV.pdf" download>
 								<i class="fas fa-file-download"></i> Curriculum Vitae
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -69,20 +77,20 @@
 				<div class="row justify-content-center mb-5" style="height: 15vh">
 					<div class="col"></div>
 					<div class="col-12 col-md-6">
-						<div class="d-flex justify-content-center">
-							<button type="button" id="fb-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3 hoverable">
+						<div class="d-flex justify-content-center hover-zoom">
+							<a  id="fb-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3 hover-zoom" target="_blank" href="https://www.facebook.com/machaweshongwe">
 								<i class="fab fa-facebook-f"></i>
-							</button>
-							<button type="button" id="github-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3">
+							</a>
+							<a  id="github-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3" target="_blank" href="https://github.com/Machawe">
 								<i class="fab fa-github"></i>
-							</button>
-							<button type="button" id="whatsapp-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3">
+							</a>
+							<a  id="whatsapp-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3" target="_blank" href="https://wa.me/+26876497748">
 								<i class="fab fa-whatsapp"></i>
-							</button>
-							<button type="button" id="linkedin-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3">
-								<i class="fab fa-twitter"></i>
-							</button>
-						</div>
+							</a>
+							<a  id="linkedin-social-btn" class="btn btn-outline-white btn-lg btn-floating mx-3" target="_blank" href="https://www.linkedin.com/in/machaweshongwe">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							</div>
 					</div>
 				</div>
 			</section>
@@ -97,45 +105,45 @@
 							exciting technological advances that help others. I graduated from the University of Eswatini in 2021 with a Bachelor's Degree in Computer Science and Mathematics.
 						</p>
 						<!-- <p>I started teaching myself programming in 2016, which sparked my interest and lead me to doing a Bsc in Computer Science and Mathematics at the University of Eswatini in 2017. This is where I took courses that taut me a lot courses from methamethical proofs and mathematics of finance  to data structures, Algorithm,operating system to Networks </p> -->
-						<div class="row">
-							<div class="col-9 h5 font-weight-bolder mb-0">Full Name</div>
-							<div class="col-9 pl-3 my-0">Mbuso Machawe Shongwe</div>
+						<div class="row text-center text-md-left">
+							<div class="col-12 h5   mb-0 bg-light-blue text-primary">Full Name</div>
+							<div class="col-12 pl-3 my-0">Mbuso Machawe Shongwe</div>
 						</div>
-						<div class="row">
-							<div class="col-9 h5 font-weight-bolder mb-0"><i class="fas fa-globe-africa"></i> Languages</div>
-							<div class="col-9 ml-2">
+						<div class="row text-center text-md-left">
+							<div class="col-12 h5  mb-0 bg-light-blue text-primary"><i class="fas fa-globe-africa"></i> Languages</div>
+							<div class="col-12 ml-2">
 								<ul class="my-0">
 									<li>English</li>
 									<li>Siswati</li>
 								</ul>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-9 h5 font-weight-bolder"><i class="fas fa-phone-alt"></i> Phone</div>
-							<div class="col-9">(+268) 76-497748</div>
+						<div class="row text-center text-md-left">
+							<div class="col-12 h5  bg-light-blue text-primary"><i class="fas fa-phone-alt"></i> Phone</div>
+							<div class="col-12">(+268) 76-497748</div>
 						</div>
-						<div class="row">
-							<div class="col-9 h5 font-weight-bolder"><i class="fas fa-map-marker-alt"></i> Location</div>
-							<div class="col-9">Kwaluseni, Eswatini</div>
+						<div class="row text-center text-md-left">
+							<div class="col-12 h5 bg-light-blue text-primary"><i class="fas fa-map-marker-alt"></i> Location</div>
+							<div class="col-12">Kwaluseni, Eswatini</div>
 						</div>
-						<div class="row">
-							<div class="col-9 h5 font-weight-bolder"><i class="far fa-envelope"></i> Email</div>
-							<div class="col-9">machaweshognwe@gmail.com</div>
+						<div class="row text-center text-md-left">
+							<div class="col-12 h5 bg-light-blue text-primary"><i class="far fa-envelope"></i> Email</div>
+							<div class="col-12">machaweshognwe@gmail.com</div>
 						</div>
-						<div class="row">
-							<div class="co h5 font-weight-bolder mb-0"><i class="fas fa-user-graduate"></i> Education</div>
-							<div class="co">Bsc Computer Science & Mathamathics</div>
+						<div class="row text-center text-md-left">
+							<div class="col-12 h5  mb-0 bg-light-blue text-primary"><i class="fas fa-user-graduate"></i> Education</div>
+							<div class="col-12">Bsc Computer Science & Mathamathics</div>
 						</div>
-						<div class="row">
+						<div class="row text-center text-md-left">
 							<div class="col">
 
-								<button type="button" class="btn btn-outline-primary btn-lg mx-3 btn-rounded text-center justify-content-center">
-									<i class="fas fa-file-download"></i> Curriculum Vitae
-								</button>
+								<a  class="btn btn-outline-primary btn-lg mx-3 btn-rounded hero-download" href="assets/Mbuso-Shongwe-CV.pdf" download>
+								<i class="fas fa-file-download"></i> Curriculum Vitae
+							</a>
 							</div>
 						</div>
 					</div>
-					<div class="col hover-zoom ripple " data-mdb-ripple-color="primary">
+					<div class="col-12 col-md-6 order-1 hover-zoom ripple rounded-5 align-items-center justify-content-center" data-mdb-ripple-color="primary">
 						<img src="img/machawe-about.jpg" class="img-thumbnail" alt="Mbuso Machawe Shongwe" />
 					
 					</div>
@@ -221,75 +229,115 @@
 
 			<section class="pt-5 bg-light-blue pb-5" id="skills">
 				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-7">
-							<p class="h2 section-header blue-text">Skills</p>
-							<div class="mb-3">
-								<p class="m-0 p-0 h5">HTML</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
-									<div class="progress-bar rounded-7" role="progressbar" style="width: 90%; height: 20px" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-								</div>
-							</div>
-							<div class="mb-3">
-								<p class="m-0 p-0 h5">CSS</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
-									<div class="progress-bar rounded-7" role="progressbar" style="width: 80%; height: 20px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-								</div>
-							</div>
+					<div class="row justify-content-around">
+						<div class="col-12 col-md-7 border-right">
+							<p class="h2 section-header blue-text text-center">Skills</p>
 							<div class="mb-3">
 								<p class="m-0 p-0 h5">JavaScript</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" style="height: 20px">
 									<div class="progress-bar rounded-7" role="progressbar" style="width: 85%; height: 20px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
 								</div>
 							</div>
 							<div class="mb-3">
-								<p class="m-0 p-0 h5">VueJs</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
-									<div class="progress-bar rounded-7" role="progressbar" style="width: 85%; height: 20px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+								<p class="m-0 p-0 h5" title="Java is a programming language that is used for backend development, Android Development, Desktop development ">Java</p>
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 75%; height: 20px" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
 								</div>
 							</div>
 							<div class="mb-3">
-								<p class="m-0 p-0 h5">Python</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
+								<p class="m-0 p-0 h5" title="Python is a programming language useful for backend development, machine learning , webscraping and many more">Python</p>
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" style="height: 20px">
 									<div class="progress-bar rounded-7" role="progressbar" style="width: 60%; height: 20px" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
 								</div>
 							</div>
 							<div class="mb-3">
-								<p class="m-0 p-0 h5">Java</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
-									<div class="progress-bar rounded-7" role="progressbar" style="width: 70%; height: 20px" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+								<p class="m-0 p-0 h5" title="PHP is a backend scripting language">C++</p>
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 70%; height: 20px" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">70%</div>
+								</div>
+							</div>
+				
+							<div class="mb-3">
+								<p class="m-0 p-0 h5">VueJs</p>
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 85%; height: 20px" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
 								</div>
 							</div>
 							<div class="mb-3">
-								<p class="m-0 p-0 h5">PHP</p>
-								<div class="progress md-progress rounded-7 bg-light" style="height: 20px">
-									<div class="progress-bar rounded-7" role="progressbar" style="width: 30%; height: 20px" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+								<p class="m-0 p-0 h5" title="This is the language used to markup web pages">HTML</p>
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 90%; height: 20px" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
 								</div>
 							</div>
-							<div>
+							<div class="mb-3">
+								<p class="m-0 p-0 h5" title="Cascading Style Sheet">CSS</p>
+								<div class="progress md-progress rounded-7 bg-light hover-shadow" title="CSS knowledge" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 80%; height: 20px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+								</div>
+							</div>
+							<div class="mb-3">
 								<p class="m-0 p-0 h5">MYSQL</p>
-								<div class="progress md-progress border rounded-7 bg-light" style="height: 20px">
+								<div class="progress md-progress border rounded-7 bg-light hover-shadow" style="height: 20px">
 									<div class="progress-bar rounded-7" role="progressbar" style="width: 60%; height: 20px" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">60%</div>
 								</div>
 							</div>
+							<div class="mb-3">
+								<p class="m-0 p-0 h5">UX Design</p>
+								<div class="progress md-progress border rounded-7 bg-light hover-shadow" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 80%; height: 20px" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+								</div>
+							</div>
+							<div class="mb-3">
+								<p class="m-0 p-0 h5">Graphic Design</p>
+								<div class="progress md-progress border rounded-7 bg-light hover-shadow" style="height: 20px">
+									<div class="progress-bar rounded-7" role="progressbar" style="width: 60%; height: 20px" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-12 col-md-5">
-							<p class="h2 section-header blue-text">Tools</p>
 
-							<ul>
-								<li class="font-weigth-bold h5">Git</li>
-								<li class="font-weigth-bold h5">VS Code</li>
-								<li class="font-weigth-bold h5">CorelDraw</li>
-								<li class="font-weigth-bold h5">Figma</li>
-								<li class="font-weigth-bold h5">Adobe XD</li>
-								<li class="font-weigth-bold h5">Google , Stackoverflow, Pinterest</li>
-							</ul>
+						<div class="col-12 col-md-5 bg-light-grey rounded-lg z-depth-3">							
+							<p class="h2 section-header blue-text text-center">Tools I use</p>
+							<div class="  d-flex flex-column justify-content-around align-items-center" style="height: 100%;">
+								<section class=" w-100" id="coding">
+									<p class="h4 font-weight-bold bg-white w-100 text-center mb-3">Coding</p>
+									<div class="d-flex justify-content-around">
+										
+										<img src="./img/git-logo-colored.png" class="rounded float-left" height="50px" alt="Git"> 
+										<span class="d-flex flex-column font-weight-bolder">
+											<img src="./img/visual-studio-code.png" class="rounded float-left" height="50px" alt="Git">VS Code</li>
+										</span>
+									</div>
+									
+								</section>
+								<section class="w-100">
+									<p class="h4  font-weight-bold bg-white w-100 text-center">Graphic Design and Photo Editing</p>
+									<div class="d-flex justify-content-around">
+										<span class="d-flex flex-column font-weight-bolder">
+											
+											<img src="./img/corel_draw_icon.png" class="rounded float-left" height="50px" alt="Git"> Corel Draw
+										</span>
+									</div>
+								</section>						
+								<section class="w-100">
+									<p class="h4 font-weight-bold text-center w-100">UX/UI Design</p>
+									
+									<div class="d-flex justify-content-around">
+										<span class="d-flex flex-column font-weight-bolder">
+											
+											<img src="./img/figma.png" class="rounded float-left" height="50px" alt="Figma">Figma
+										</span>
+									<span class="d-flex flex-column font-weight-bolder"><img src="./img/adobe-xd.png" class="rounded float-left" height="50px" alt="Git"> Adobe XD</span>
+								</div>
+									</section>
+							
+								
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- <section class="pt-5 mt-5 container-md" id="projects">
+			<section class="pt-5 mt-5 container-md bg-white" id="projects">
 				<p class="h2 section-header blue-text">Projects</p>
 
 				<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
@@ -298,34 +346,34 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-4">
-										<div class="card">
-											<img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp" class="card-img-top" alt="Waterfall" />
-											<div class="card-body">
+										<div class="card ">
+											<img src="./img/stokvelmutual.png" class="card-img-top" alt="stokvelmutual" />
+											<div class="card-body border-top">
 												<h5 class="card-title">Stokvel Mutual</h5>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="#!" class="btn btn-primary">Button</a>
+												<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+												<a href="https://stovkelmutual.com" class="btn btn-primary">Visit</a>
 											</div>
 										</div>
 									</div>
 
 									<div class="col-lg-4 d-none d-lg-block">
 										<div class="card">
-											<img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea" />
-											<div class="card-body">
+											<img src="./img/eduapp.png" class="card-img-top" alt="Lenfundvo App" />
+											<div class="card-body  border-top">
 												<h5 class="card-title">Edu App</h5>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="#!" class="btn btn-primary">Button</a>
+												<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+												<a href="https://edu-app.netlify.app/" class="btn btn-primary">Visit</a>
 											</div>
 										</div>
 									</div>
 
 									<div class="col-lg-4 d-none d-lg-block">
 										<div class="card">
-											<img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp" class="card-img-top" alt="Sunset over the Sea" />
+											<img src="./img/UNDP-UNESWA.png" class="card-img-top" alt="Sunset over the Sea" />
 											<div class="card-body">
-												<h5 class="card-title">Law204</h5>
-												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												<a href="#!" class="btn btn-primary">Button</a>
+												<h5 class="card-title">UNESWA Educational Apps</h5>
+												<!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+												<a href="https://law204.netlify.app/" class="btn btn-primary">Visit</a>
 											</div>
 										</div>
 									</div>
@@ -333,7 +381,7 @@
 							</div>
 						</div>
 
-						<div class="carousel-item">
+						<!-- <div class="carousel-item">
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-4 col-md-12">
@@ -370,9 +418,9 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
-						<div class="carousel-item">
+						<!-- <div class="carousel-item">
 							<div class="container">
 								<div class="row">
 									<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
@@ -409,7 +457,7 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 
 					<div class="d-flex justify-content-center mb-4">
@@ -423,7 +471,7 @@
 						</button>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
 			<section class="pt-5 mt-5 bg-blue" id="contact">
 				<div class="container">
@@ -478,10 +526,11 @@
 									<li>
 										<i class="fas fa-phone mt-4 fa-lg"></i>
 										<p>+268 76497748</p>
+										<!-- <input type="search" name="Range-test" id="ranging"> -->
 									</li>
 									<li>
 										<i class="fas fa-map-marker-alt fa-lg"></i>
-										<p>San Francisco, CA 94126, USA</p>
+										<p>Kwaluseni, Manzini, Eswatini</p>
 									</li>
 
 									<li>
@@ -497,25 +546,16 @@
 					<div class="text-center p-4 pb-3">
 						<!-- Section: Social media -->
 						<section class="mb-4">
-							<!-- Facebook -->
-							<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-							<!-- Twitter -->
-							<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-							<!-- Google -->
-							<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-
-							<!-- Instagram -->
-							<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-							<!-- Linkedin -->
-							<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
-							<!-- Github -->
-							<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+							<a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.facebook.com/machaweshongwe" role="button"><i class="fab fa-facebook-f"></i></a>
+							
+							<a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://wa.me/+26876497748" role="button"><i class="fab fa-whatsapp"></i></a>
+							
+							
+							<a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.linkedin.com/in/machaweshongwe" role="button"><i class="fab fa-linkedin-in"></i></a>
+							
+						
+							<a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://github.com/Machawe" role="button"><i class="fab fa-github"></i></a>
 						</section>
-						<!-- Section: Social media -->
 					</div>
 				</div>
 				<!--Section: Contact v.2-->
