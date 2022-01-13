@@ -1,27 +1,28 @@
-const fbBtn = document.getElementById("fb-social-btn")
-const githubBtn = document.getElementById("github-social-btn");
-const whatsappBtn = document.getElementById("whatsapp-social-btn");
-const linkedinBtn = document.getElementById("linkedin-social-btn");
+const sections = document.querySelectorAll("section");
 
+navLink = document.querySelectorAll(".nav-link");
 
-fbBtn.addEventListener("click",(event)=>{
-  window.open("https://www.facebook.com/machaweshongwe");
-}
-)
+window.onscroll = () => {
+	let current = "hero";
+	// console.log(scrollY)
 
-githubBtn.addEventListener("click", (event) => {
-	window.open("https://github.com/Machawe");
-});
-linkedinBtn.addEventListener("click", (event) => {
-	window.open("https://www.linkedin.com/in/machaweshongwe");
-});
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		if (scrollY >= sectionTop - 100) {
+			if (section.getAttribute("id") !== null) {
+				current = section.getAttribute("id");
+			}
+		}
+	});
+	navLink.forEach((li) => {
+		li.classList.remove("active");
+		if (li.classList.contains(current)) {
+			li.classList.add("active");
+		}
+	});
+	console.log(current);
+};
 
-whatsappBtn.addEventListener("click", (event) => {
-  console.log("whatsapp")
-	window.open(" https://wa.me/+26876497748");
-	// window.open(" tel:+26876497748");
-});
-
-function sendMesssage(){
-	console.log("This is the massage")
+function sendMesssage() {
+	console.log("This is the massage");
 }

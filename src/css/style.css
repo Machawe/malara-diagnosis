@@ -20,6 +20,7 @@ body {
 	z-index: -1;
 }
 
+
 .custom-shape-divider-bottom-1641292139 svg {
 	position: relative;
 	display: block;
@@ -43,9 +44,18 @@ body {
 .nav-link {
 	font-size: 18pt;
 }
+ .navbar .collapse .navbar-nav .active{
+color: #2658ff;
+background-color: #e7eaf3;
+text-decoration: underline;
+cursor:default;
+}
 
 .bg-light-blue {
 	background-color: #e7eaf3;
+}
+.bg-light-grey{
+	background-color: #f5f5f5;
 }
 .bg-blue {
 	background-color: #2658ff;
